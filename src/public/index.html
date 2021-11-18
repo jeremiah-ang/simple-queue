@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>7 Steps</title>
+    <link href="main.css" rel="stylesheet" />
+    <link href="overlay-loading.css" rel="stylesheet" />
+    <script src="./main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="horizontal">
+        <div class="vertical">
+          <div>
+            <div>
+              <h1>Join Queue</h1>
+              <p>
+                <label>Cusomter Name:</label>
+                <input type="text" id="name" />
+                <button id="join-queue">Join Queue!</button>
+              </p>
+            </div>
+          </div>
+          <div>
+              <h1>Now Serving:</h1>
+              <p id="customer-id"></p>
+              <p id="customer-name"></p>
+          </div>
+        </div>
+        <div class="vertical">
+          <div>
+            <h1>Customer in Queue:</h1>
+            <p>
+              <button id="refresh">Refresh</button>
+              <button id="next">Serve Next</button>
+            </p>
+            <p>
+              <ul id="customers"></ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="loading" class="loading">
+      <div class="spinner-wrapper">
+        <span class="spinner-text">LOADING</span>
+        <span class="spinner"></span>
+      </div>
+    </div>
+  </body>
+  </html>
